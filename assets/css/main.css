@@ -3398,20 +3398,17 @@ input, select, textarea {
 		}
 
 		.panel.spotlight .content {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-direction: column;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
-			justify-content: center;
-			padding: 3.5rem 3.5rem 2rem 3.5rem ;
-		}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5rem 3.5rem 2rem 3.5rem;
+
+  /* NEW: make content take full width if no image */
+  width: 100%;
+  max-width: 100%;
+  flex: 1 1 100%;
+}
+
 
 		.panel.spotlight .image {
 			position: absolute;
