@@ -68,6 +68,21 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+.gallery.uniform-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0;
+}
+
+.gallery.uniform-grid .image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+
 /* Page */
 
 	@-moz-keyframes load-spinner {
