@@ -7,6 +7,36 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+/* Project row layout */
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.project-row p {
+  margin-bottom: 0;
+}
+
+.project-action .button {
+  white-space: nowrap;
+}
+
+/* Mobile fix */
+@media screen and (max-width: 736px) {
+  .project-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-action {
+    margin-top: 1rem;
+  }
+}
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1659,3 +1689,47 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+/* Project detail header */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Back link styling */
+.project-header .back-link {
+  font-size: 0.85em;
+  opacity: 0.75;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.project-header .back-link:hover {
+  opacity: 1;
+  border-bottom-color: currentColor;
+}
+
+/* Mobile adjustment */
+@media screen and (max-width: 736px) {
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-header .back-link {
+    margin-top: 0.5rem;
+  }
+}
+
+
+/* Reduce image spacing in project detail pages */
+.project-detail .image.main {
+  margin: 1rem 0;
+}
+
+.project-detail .image.main img {
+  max-height: 200px;
+}
